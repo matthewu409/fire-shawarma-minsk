@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FIRE SHAWARMA — шаурма и пита в Минске</title>
+  <meta name="description" content="FIRE SHAWARMA — шаурма, пита, комбо и закуски в центре Минска. Доставка по городу, бесплатно от 25 BYN. Самовывоз со скидкой 10%.">
+  <meta name="theme-color" content="#FAF9F6">
+  <meta property="og:title" content="FIRE SHAWARMA — шаурма и пита в Минске">
+  <meta property="og:description" content="Готовим за 7 минут. Бесплатная доставка по Минску от 25 BYN.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_BY">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23C84B31'/%3E%3Ctext x='50' y='71' font-family='Arial,sans-serif' font-size='62' font-weight='800' text-anchor='middle' fill='white'%3EF%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=4">
+</head>
+<body>
+
+  <!-- SVG sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+      <symbol id="i-bag" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></symbol>
+      <symbol id="i-close" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+      <symbol id="i-truck" viewBox="0 0 24 24"><path d="M1 3h15v13H1zM16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+      <symbol id="i-tag" viewBox="0 0 24 24"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L2 12V2h10l8.6 8.6a2 2 0 0 1 0 2.8z"/><path d="M7 7h.01"/></symbol>
+      <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+      <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+      <symbol id="i-trash" viewBox="0 0 24 24"><path d="M3 6h18M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2m3 0-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6M10 11v6M14 11v6"/></symbol>
+      <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></symbol>
+      <symbol id="i-telegram" viewBox="0 0 24 24"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z"/></symbol>
+      <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8z"/></symbol>
+      <symbol id="i-qr" viewBox="0 0 24 24"><path d="M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h3v3h-3zM20 14v3M14 20h3M20 20h1"/></symbol>
+      <symbol id="i-card" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></symbol>
+      <symbol id="i-gift" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13M19 12v8a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-8M7.5 8a2.5 2.5 0 0 1 0-5C11 3 12 8 12 8s1-5 4.5-5a2.5 2.5 0 0 1 0 5"/></symbol>
+      <symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></symbol>
+      <symbol id="i-cash" viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="12" rx="2"/><circle cx="12" cy="12" r="3"/><path d="M6 12h.01M18 12h.01"/></symbol>
+    </defs>
+  </svg>
+
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="top">
+    <div class="topbar">
+      <div class="container topbar__inner">
+        <div class="topbar__location">
+          <svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>
+          <label class="visually-hidden" for="location-select">Выберите точку в Минске</label>
+          <select id="location-select" name="location" class="location-select">
+            <option value="nemiga" selected>Минск, ул. Немига, 5</option>
+            <option value="nezavisimosti">Минск, пр-т Независимости, 44</option>
+          </select>
+        </div>
+        <p class="topbar__hours">
+          <svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>
+          <span><span class="topbar__days">Ежедневно </span><time>10:00 – 23:00</time></span>
+        </p>
+        <a class="topbar__phone" href="tel:+375297778899">
+          <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
+          <span>+375 (29) 777-88-99</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="navbar">
+      <div class="container navbar__inner">
+        <a class="logo" href="#top" aria-label="FIRE SHAWARMA — на главную">
+          <span class="logo__fire">FIRE</span><span class="logo__word">SHAWARMA</span>
+        </a>
+
+        <nav class="main-nav" aria-label="Основная навигация">
+          <ul class="main-nav__list">
+            <li><a href="#menu">Меню</a></li>
+            <li><a href="#perks">Акции</a></li>
+            <li><a href="#locations">Адреса</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <button class="cart-btn" type="button" id="cart-open" aria-haspopup="dialog" aria-controls="cart-drawer" aria-label="Открыть корзину">
+          <svg class="icon" aria-hidden="true"><use href="#i-bag"/></svg>
+          <span class="cart-btn__label">Корзина</span>
+          <span class="cart-btn__badge" id="cart-count" aria-live="polite">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="hero__eyebrow">Street food в центре Минска</p>
+          <h1 class="hero__title" id="hero-title">Шаурма и пита <span class="text-fire">без ожидания</span></h1>
+          <p class="hero__usp">Готовим на открытом огне за 7&nbsp;минут</p>
+          <p class="hero__text">Свежие продукты каждый день. Заказывайте онлайн: доставим по Минску или подготовим к вашему приходу.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary btn--lg" href="#menu">Смотреть меню</a>
+            <a class="btn btn--ghost btn--lg" href="#locations">Где нас найти</a>
+          </div>
+          <ul class="hero__facts">
+            <li><strong>7 мин</strong><span>время приготовления</span></li>
+            <li><strong>2 точки</strong><span>Немига и Независимости</span></li>
+            <li><strong>10:00–23:00</strong><span>каждый день</span></li>
+          </ul>
+        </div>
+
+        <figure class="hero__figure">
+          <div class="hero__frame">
+            <img class="hero__photo" src="./images/1.jpg" width="1200" height="1000" fetchpriority="high"
+                 alt="Свежая шаурма FIRE SHAWARMA">
+          </div>
+          <figcaption class="hero__chip">
+            <svg class="icon" aria-hidden="true"><use href="#i-truck"/></svg>
+            <span><strong>Бесплатная доставка</strong>по Минску от 25 BYN</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ MENU ============ -->
+    <section class="section menu" id="menu" aria-labelledby="menu-title">
+      <div class="container">
+        <header class="section__head">
+          <p class="section__eyebrow">Меню</p>
+          <h2 class="section__title" id="menu-title">Выберите <span class="text-fire">блюдо</span></h2>
+          <p class="section__lead">Размер выбирается на карточке, добавки: при заказе. Цены указаны в белорусских рублях.</p>
+        </header>
+
+        <div class="tabs" role="tablist" aria-label="Категории меню" id="menu-tabs">
+          <button class="tab is-active" role="tab" type="button" id="tab-all" aria-selected="true" aria-controls="menu-grid" data-category="all">Все</button>
+          <button class="tab" role="tab" type="button" id="tab-shawarma" aria-selected="false" aria-controls="menu-grid" data-category="shawarma" tabindex="-1">Шаурма</button>
+          <button class="tab" role="tab" type="button" id="tab-combo" aria-selected="false" aria-controls="menu-grid" data-category="combo" tabindex="-1">Комбо</button>
+          <button class="tab" role="tab" type="button" id="tab-pita" aria-selected="false" aria-controls="menu-grid" data-category="pita" tabindex="-1">Пита</button>
+          <button class="tab" role="tab" type="button" id="tab-snacks" aria-selected="false" aria-controls="menu-grid" data-category="snacks" tabindex="-1">Закуски</button>
+          <button class="tab" role="tab" type="button" id="tab-sauces" aria-selected="false" aria-controls="menu-grid" data-category="sauces" tabindex="-1">Соусы</button>
+          <button class="tab" role="tab" type="button" id="tab-drinks" aria-selected="false" aria-controls="menu-grid" data-category="drinks" tabindex="-1">Напитки</button>
+        </div>
+
+        <!-- Карточки рендерятся из MENU_ITEMS в app.js -->
+        <div class="product-grid" id="menu-grid" role="tabpanel" aria-labelledby="tab-all"></div>
+
+        <p class="menu-empty" id="menu-empty" hidden>В этой категории пока нет позиций. Посмотрите другие разделы меню.</p>
+        <noscript><p class="menu-empty">Для заказа на сайте включите JavaScript или позвоните нам: +375 (29) 777-88-99.</p></noscript>
+      </div>
+    </section>
+
+    <!-- ============ PERKS ============ -->
+    <section class="perks" id="perks" aria-label="Условия заказа">
+      <div class="container">
+        <ul class="perks__list">
+          <li class="perk">
+            <span class="perk__icon" aria-hidden="true"><svg class="icon"><use href="#i-tag"/></svg></span>
+            <div class="perk__body">
+              <h3 class="perk__title">Первый заказ −10%</h3>
+              <p class="perk__text">Промокод <code class="perk__code">MINSK10</code> в корзине.</p>
+            </div>
+          </li>
+          <li class="perk">
+            <span class="perk__icon" aria-hidden="true"><svg class="icon"><use href="#i-bag"/></svg></span>
+            <div class="perk__body">
+              <h3 class="perk__title">Самовывоз −10%</h3>
+              <p class="perk__text">Скидка при заказе с собой.</p>
+            </div>
+          </li>
+          <li class="perk">
+            <span class="perk__icon" aria-hidden="true"><svg class="icon"><use href="#i-truck"/></svg></span>
+            <div class="perk__body">
+              <h3 class="perk__title">Бесплатная доставка от 25 BYN</h3>
+              <p class="perk__text">По Минску.</p>
+            </div>
+          </li>
+          <li class="perk">
+            <span class="perk__icon" aria-hidden="true"><svg class="icon"><use href="#i-gift"/></svg></span>
+            <div class="perk__body">
+              <h3 class="perk__title">Подарок в день рождения</h3>
+              <p class="perk__text">При предъявлении паспорта.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ LOCATIONS ============ -->
+    <section class="section locations" id="locations" aria-labelledby="locations-title">
+      <div class="container">
+        <header class="section__head">
+          <p class="section__eyebrow">Самовывоз</p>
+          <h2 class="section__title" id="locations-title">Две точки в <span class="text-fire">центре Минска</span></h2>
+          <p class="section__lead">Заказывайте онлайн и забирайте со скидкой 10%. Заказ готовится от 7 минут.</p>
+        </header>
+
+        <div class="locations__grid">
+          <article class="location-card">
+            <h3 class="location-card__title">ул. Немига, 5</h3>
+            <p class="location-card__sub">Рядом со станцией метро «Немига»</p>
+            <ul class="info-list">
+              <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><span>г. Минск, ул. Немига, 5, 1 этаж</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg><span>Ежедневно, 10:00 – 23:00</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><a href="tel:+375297778899">+375 (29) 777-88-99</a></li>
+            </ul>
+            <a class="btn btn--ghost btn--sm" href="https://yandex.by/maps/157/minsk/?text=%D0%9C%D0%B8%D0%BD%D1%81%D0%BA%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%9D%D0%B5%D0%BC%D0%B8%D0%B3%D0%B0%2C%205" target="_blank" rel="noopener noreferrer">Построить маршрут</a>
+          </article>
+
+          <article class="location-card">
+            <h3 class="location-card__title">пр-т Независимости, 44</h3>
+            <p class="location-card__sub">Недалеко от площади Победы</p>
+            <ul class="info-list">
+              <li><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><span>г. Минск, пр-т Независимости, 44, 1 этаж</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg><span>Ежедневно, 10:00 – 23:00</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><a href="tel:+375297778899">+375 (29) 777-88-99</a></li>
+            </ul>
+            <a class="btn btn--ghost btn--sm" href="https://yandex.by/maps/157/minsk/?text=%D0%9C%D0%B8%D0%BD%D1%81%D0%BA%2C%20%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82%20%D0%9D%D0%B5%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B8%2C%2044" target="_blank" rel="noopener noreferrer">Построить маршрут</a>
+          </article>
+
+          <article class="location-card location-card--delivery">
+            <h3 class="location-card__title">Доставка по Минску</h3>
+            <p class="location-card__sub">Курьер привезёт заказ горячим</p>
+            <ul class="info-list">
+              <li><svg class="icon" aria-hidden="true"><use href="#i-truck"/></svg><span>Бесплатно при заказе от 25 BYN</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg><span>Среднее время — 35–45 минут</span></li>
+              <li><svg class="icon" aria-hidden="true"><use href="#i-card"/></svg><span>Картой курьеру, наличными или по QR</span></li>
+            </ul>
+            <p class="location-card__note">Заказы до 25 BYN — доставка 3.00 BYN.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer" id="contacts">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a class="logo" href="#top" aria-label="FIRE SHAWARMA — наверх">
+            <span class="logo__fire">FIRE</span><span class="logo__word">SHAWARMA</span>
+          </a>
+          <p class="footer__about">Шаурма, пита и закуски в центре Минска. Работаем ежедневно с 10:00 до 23:00.</p>
+        </div>
+
+        <nav class="footer__col" aria-label="Навигация в подвале">
+          <h2 class="footer__title">Навигация</h2>
+          <ul>
+            <li><a href="#menu">Меню</a></li>
+            <li><a href="#perks">Акции и условия</a></li>
+            <li><a href="#locations">Адреса и доставка</a></li>
+            <li><a href="#top">Наверх</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__col">
+          <h2 class="footer__title">Контакты</h2>
+          <ul>
+            <li><a href="tel:+375297778899">+375 (29) 777-88-99</a></li>
+            <li><a href="mailto:hello@fire-shawarma.by">hello@fire-shawarma.by</a></li>
+            <li>Ежедневно 10:00 – 23:00</li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h2 class="footer__title">Мы в соцсетях</h2>
+          <ul class="socials">
+            <li><a class="socials__link" href="https://instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg></a></li>
+            <li><a class="socials__link" href="https://t.me/" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><svg class="icon" aria-hidden="true"><use href="#i-telegram"/></svg></a></li>
+            <li><a class="socials__link" href="viber://chat?number=%2B375297778899" aria-label="Viber"><svg class="icon" aria-hidden="true"><use href="#i-chat"/></svg></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__legal">
+        <p>ООО «Файр Шаурма», УНП 192837465. Юридический адрес: 220030, г. Минск, ул. Немига, 5, пом. 2. Зарегистрировано Минским горисполкомом 14.03.2021.</p>
+        <p>Режим работы: ежедневно с 10:00 до 23:00, без выходных и перерывов. Сведения о субъекте включены в Торговый реестр Республики Беларусь.</p>
+        <p class="footer__copy">© 2026 FIRE SHAWARMA. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ MOBILE FLOATING CART BAR ============ -->
+  <div class="floating-cart" id="floating-cart">
+    <button class="floating-cart__btn" type="button" id="floating-cart-open" aria-haspopup="dialog" aria-controls="cart-drawer">
+      <span class="floating-cart__left">
+        <svg class="icon" aria-hidden="true"><use href="#i-bag"/></svg>
+        <span class="floating-cart__count"><span id="floating-count">0</span> поз.</span>
+      </span>
+      <span class="floating-cart__label">Открыть корзину</span>
+      <span class="floating-cart__total"><span id="floating-total">0.00</span> BYN</span>
+    </button>
+  </div>
+
+  <!-- ============ DISH CUSTOMIZER MODAL ============ -->
+  <div class="modal" id="dish-modal" aria-hidden="true">
+    <div class="modal__overlay" data-close="modal"></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-desc" tabindex="-1">
+      <button class="icon-btn modal__close" type="button" data-close="modal" aria-label="Закрыть окно">
+        <svg class="icon" aria-hidden="true"><use href="#i-close"/></svg>
+      </button>
+
+      <div class="modal__media">
+        <img class="modal__img" id="modal-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" width="900" height="480">
+      </div>
+
+      <form class="modal__form" id="customizer-form" novalidate>
+        <div class="modal__head">
+          <div class="modal__title-row">
+            <h2 class="modal__title" id="modal-title">Блюдо</h2>
+            <span class="modal__weight" id="modal-weight"></span>
+          </div>
+          <p class="modal__desc" id="modal-desc"></p>
+        </div>
+
+        <fieldset class="option-group" id="size-group">
+          <legend class="option-group__title">Размер</legend>
+          <div class="option-row" id="size-options"></div>
+        </fieldset>
+
+        <fieldset class="option-group" id="extras-group">
+          <legend class="option-group__title">Добавки</legend>
+          <div class="check-list">
+            <label class="check">
+              <input type="checkbox" name="extras" value="extra-cheese" data-price="1.50">
+              <span class="check__box"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
+              <span class="check__name">Доп. сыр</span>
+              <span class="check__price">+1.50 BYN</span>
+            </label>
+            <label class="check">
+              <input type="checkbox" name="extras" value="jalapeno" data-price="1.00">
+              <span class="check__box"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
+              <span class="check__name">Халапеньо</span>
+              <span class="check__price">+1.00 BYN</span>
+            </label>
+            <label class="check">
+              <input type="checkbox" name="extras" value="double-meat" data-price="4.00">
+              <span class="check__box"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
+              <span class="check__name">Двойное мясо</span>
+              <span class="check__price">+4.00 BYN</span>
+            </label>
+            <label class="check">
+              <input type="checkbox" name="extras" value="no-onion" data-price="0">
+              <span class="check__box"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg></span>
+              <span class="check__name">Без лука</span>
+              <span class="check__price">0 BYN</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <div class="modal__footer">
+          <div class="qty" role="group" aria-label="Количество">
+            <button class="qty__btn" type="button" data-qty="-1" aria-label="Уменьшить количество">
+              <svg class="icon" aria-hidden="true"><use href="#i-minus"/></svg>
+            </button>
+            <output class="qty__value" id="modal-qty" aria-live="polite">1</output>
+            <button class="qty__btn" type="button" data-qty="1" aria-label="Увеличить количество">
+              <svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg>
+            </button>
+          </div>
+          <p class="modal__price">
+            <span class="modal__price-label">Итого</span>
+            <span class="modal__price-value"><span id="modal-price" data-base="0.00">0.00</span> BYN</span>
+          </p>
+          <button class="btn btn--primary btn--lg modal__submit" type="submit" id="modal-add">Добавить в корзину</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ============ CART DRAWER ============ -->
+  <div class="drawer" id="cart-drawer" aria-hidden="true">
+    <div class="drawer__overlay" data-close="drawer"></div>
+    <aside class="drawer__panel" id="drawer-panel" role="dialog" aria-modal="true" aria-labelledby="drawer-title" tabindex="-1">
+      <header class="drawer__head">
+        <h2 class="drawer__title" id="drawer-title">Ваш заказ</h2>
+        <button class="icon-btn" type="button" data-close="drawer" aria-label="Закрыть корзину">
+          <svg class="icon" aria-hidden="true"><use href="#i-close"/></svg>
+        </button>
+      </header>
+
+      <div class="drawer__body" id="drawer-body">
+
+        <section aria-label="Товары в корзине">
+          <ul class="cart-list" id="cart-list">
+            <li class="cart-empty" id="cart-empty">
+              <span class="cart-empty__icon" aria-hidden="true"><svg class="icon"><use href="#i-bag"/></svg></span>
+              <p class="cart-empty__title">Корзина пока пуста</p>
+              <p class="cart-empty__text">Выберите блюда в меню — приготовим за 7 минут.</p>
+              <a class="btn btn--ghost btn--sm" href="#menu" data-close="drawer">Перейти в меню</a>
+            </li>
+          </ul>
+
+          <div class="progress" id="delivery-progress" hidden>
+            <p class="progress__text" id="progress-text"></p>
+            <div class="progress__track" id="progress-track" role="progressbar" aria-labelledby="progress-text" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+              <span class="progress__bar" id="progress-bar"></span>
+            </div>
+          </div>
+        </section>
+
+        <form class="checkout" id="checkout-form" novalidate>
+
+          <fieldset class="checkout__group">
+            <legend class="checkout__title">Получение</legend>
+            <div class="segmented" role="radiogroup" aria-label="Способ получения">
+              <input type="radio" name="delivery" id="delivery-courier" value="delivery" checked>
+              <label for="delivery-courier">
+                <svg class="icon" aria-hidden="true"><use href="#i-truck"/></svg>
+                Доставка
+              </label>
+              <input type="radio" name="delivery" id="delivery-pickup" value="pickup">
+              <label for="delivery-pickup">
+                <svg class="icon" aria-hidden="true"><use href="#i-bag"/></svg>
+                Самовывоз <span class="segmented__badge">−10%</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset class="checkout__group">
+            <legend class="checkout__title">Контакты</legend>
+
+            <div class="field">
+              <label class="field__label" for="order-name">Имя</label>
+              <input class="field__input" type="text" id="order-name" name="name" autocomplete="given-name" maxlength="60" placeholder="Как к вам обращаться" aria-describedby="order-name-error" required>
+              <p class="field__error" id="order-name-error" role="alert" hidden></p>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="order-phone">Телефон</label>
+              <input class="field__input" type="tel" id="order-phone" name="phone" autocomplete="tel" inputmode="tel" maxlength="19" placeholder="+375 (29) 123-45-67" aria-describedby="order-phone-error" required>
+              <p class="field__error" id="order-phone-error" role="alert" hidden></p>
+            </div>
+
+            <div class="field" id="address-field" data-mode="delivery">
+              <label class="field__label" for="order-address">Адрес доставки</label>
+              <input class="field__input" type="text" id="order-address" name="address" autocomplete="street-address" maxlength="200" placeholder="Улица, дом, квартира" aria-describedby="order-address-error" required>
+              <p class="field__error" id="order-address-error" role="alert" hidden></p>
+            </div>
+
+            <div class="field" id="pickup-field" data-mode="pickup" hidden>
+              <label class="field__label" for="order-pickup">Точка самовывоза</label>
+              <select class="field__input field__input--select" id="order-pickup" name="pickup_point">
+                <option value="nemiga">ул. Немига, 5</option>
+                <option value="nezavisimosti">пр-т Независимости, 44</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="order-comment">Комментарий <span class="field__opt">(необязательно)</span></label>
+              <textarea class="field__input field__input--area" id="order-comment" name="comment" rows="2" maxlength="300" placeholder="Код домофона, пожелания к заказу"></textarea>
+            </div>
+          </fieldset>
+
+          <fieldset class="checkout__group">
+            <legend class="checkout__title">Оплата</legend>
+            <div class="pay-list">
+              <label class="pay">
+                <input type="radio" name="payment" value="card-courier" checked>
+                <span class="pay__box">
+                  <svg class="icon" aria-hidden="true"><use href="#i-card"/></svg>
+                  <span class="pay__name" data-delivery="Картой курьеру" data-pickup="Картой при получении">Картой курьеру</span>
+                </span>
+              </label>
+              <label class="pay">
+                <input type="radio" name="payment" value="cash">
+                <span class="pay__box">
+                  <svg class="icon" aria-hidden="true"><use href="#i-cash"/></svg>
+                  <span class="pay__name" data-delivery="Наличные" data-pickup="Наличные при получении">Наличные</span>
+                </span>
+              </label>
+              <label class="pay">
+                <input type="radio" name="payment" value="qr">
+                <span class="pay__box">
+                  <svg class="icon" aria-hidden="true"><use href="#i-qr"/></svg>
+                  <span class="pay__name" data-delivery="Оплати QR" data-pickup="Оплати QR">Оплати QR</span>
+                </span>
+              </label>
+            </div>
+          </fieldset>
+
+          <p class="checkout__consent">Нажимая «Оформить заказ», вы соглашаетесь с обработкой персональных данных для выполнения заказа.</p>
+        </form>
+      </div>
+
+      <footer class="drawer__foot" id="drawer-foot">
+        <form class="promo-form" id="promo-form" novalidate>
+          <label class="visually-hidden" for="promo-input">Промокод</label>
+          <input class="field__input promo-form__input" type="text" id="promo-input" name="promo" placeholder="Промокод" autocomplete="off" autocapitalize="characters" spellcheck="false" maxlength="20">
+          <button class="btn btn--ghost btn--sm promo-form__btn" type="submit" id="promo-btn">Применить</button>
+        </form>
+        <p class="promo-msg" id="promo-msg" role="status" hidden></p>
+
+        <dl class="totals">
+          <div class="totals__row">
+            <dt>Товары</dt>
+            <dd><span id="total-items">0.00</span> BYN</dd>
+          </div>
+          <div class="totals__row totals__row--discount" id="discount-row" hidden>
+            <dt id="discount-label">Скидка</dt>
+            <dd>−<span id="total-discount">0.00</span> BYN</dd>
+          </div>
+          <div class="totals__row">
+            <dt>Доставка</dt>
+            <dd id="total-delivery">—</dd>
+          </div>
+          <div class="totals__row totals__row--grand">
+            <dt>К оплате</dt>
+            <dd><span id="total-grand">0.00</span> BYN</dd>
+          </div>
+        </dl>
+
+        <p class="checkout__error" id="checkout-error" role="alert" hidden></p>
+        <button class="btn btn--primary btn--lg btn--block" type="submit" form="checkout-form" id="checkout-submit" disabled>Оформить заказ</button>
+      </footer>
+
+      <section class="order-done" id="order-done" hidden>
+        <span class="order-done__icon" aria-hidden="true"><svg class="icon"><use href="#i-check"/></svg></span>
+        <h3 class="order-done__title" id="order-done-title" tabindex="-1">Заказ принят!</h3>
+        <p class="order-done__num">Номер заказа: <strong id="done-number">—</strong></p>
+        <p class="order-done__text" id="done-text"></p>
+        <dl class="order-done__sum">
+          <div><dt>Получение</dt><dd id="done-type">—</dd></div>
+          <div><dt>Сумма</dt><dd><span id="done-total">0.00</span> BYN</dd></div>
+        </dl>
+        <button class="btn btn--primary btn--lg" type="button" data-close="drawer">Вернуться в меню</button>
+      </section>
+    </aside>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- Шаблон строки корзины -->
+  <template id="cart-item-template">
+    <li class="cart-item" data-key="">
+      <img class="cart-item__thumb" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" width="64" height="64">
+      <div class="cart-item__info">
+        <h3 class="cart-item__title">Название блюда</h3>
+        <p class="cart-item__opts">Стандарт</p>
+        <div class="qty qty--sm" role="group" aria-label="Количество">
+          <button class="qty__btn" type="button" data-qty="-1" aria-label="Уменьшить количество">
+            <svg class="icon" aria-hidden="true"><use href="#i-minus"/></svg>
+          </button>
+          <output class="qty__value">1</output>
+          <button class="qty__btn" type="button" data-qty="1" aria-label="Увеличить количество">
+            <svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg>
+          </button>
+        </div>
+      </div>
+      <div class="cart-item__side">
+        <p class="cart-item__price"><span>0.00</span> BYN</p>
+        <button class="icon-btn icon-btn--sm" type="button" data-remove aria-label="Удалить из корзины">
+          <svg class="icon" aria-hidden="true"><use href="#i-trash"/></svg>
+        </button>
+      </div>
+    </li>
+  </template>
+
+  <script src="app.js?v=3" defer></script>
+</body>
+</html>
