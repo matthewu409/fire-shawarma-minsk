@@ -9,7 +9,7 @@
   /* ---------- Константы ---------- */
   const STORAGE_KEY = 'fire-shawarma:cart:v3';
   const LOCATION_KEY = 'fire-shawarma:location:v1';
-  const ENDPOINT = '/.netlify/functions/sendOrder';
+  const ENDPOINT = '/api/sendOrder';
   const FREE_DELIVERY_FROM = 2500; // 25.00 BYN
   const DELIVERY_FEE = 300;        // 3.00 BYN
   const PICKUP_DISCOUNT = 10;      // %
@@ -24,7 +24,7 @@
   // Цены в копейках. Фото берутся только из локальной папки ./images (номер файла в поле photo).
   // variants — размеры/объёмы: у каждого свой вес и цена (если вариант один, выбор не показывается).
   // extras   — добавки: если список не пуст, вместо «В корзину» открывается окно выбора.
-  // Цены, варианты и добавки дублируются в netlify/functions/sendOrder.js (сервер пересчитывает заказ сам).
+  // Цены, варианты и добавки дублируются в functions/api/sendOrder.js (сервер пересчитывает заказ сам).
   const byn = (value) => Math.round(value * 100);
   const imageSrc = (n) => `./images/${n}.jpg`;
 
